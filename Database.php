@@ -32,15 +32,17 @@
       }
     }
 
-    public function executeQuery($query) {
-        $stmt = $this->connection->query($query);
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $this->logQuery($query);
-
-        return $result;
-    }
+    public function executeQuery($query, $parameters = []) {
+      $stmt = $this->connection->prepare($query);
+      $stmt->execute($parameters);
+      $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      $this->logQuery($query);
+  
+      return $result;
+  }
     
     public function insertCliente($nome, $idade, $email) {
+        $this->enableQueryLogging();
         $query = "INSERT INTO cliente (nome, idade, email) VALUES (:nome, :idade, :email)";
 
         $stmt = $this->connection->prepare($query);
@@ -54,6 +56,7 @@
     }
 
     public function updateCliente($id, $nome, $idade, $email) {
+        $this->enableQueryLogging();
         $query = "UPDATE cliente SET nome = :nome, idade = :idade, email = :email WHERE id = :id";
 
         $stmt = $this->connection->prepare($query);
@@ -68,6 +71,7 @@
     }
 
     public function deleteCliente($id) {
+        $this->enableQueryLogging();
         $query = "DELETE FROM cliente WHERE id = :id";
         $stmt = $this->connection->prepare($query);
         $stmt->bindValue(':id', $id);

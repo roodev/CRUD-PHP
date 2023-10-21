@@ -1,10 +1,53 @@
-[2023-10-19 17:38:39] SELECT * FROM cliente
-[2023-10-19 17:38:43] SELECT * FROM cliente
-[2023-10-19 17:38:50] SELECT * FROM cliente
-[2023-10-19 17:38:53] SELECT * FROM cliente
-[2023-10-19 17:39:07] SELECT * FROM cliente
-[2023-10-19 17:41:30] INSERT INTO cliente (nome, idade, email) VALUES (:nome, :idade, :email)
-[2023-10-19 17:41:30] SELECT * FROM cliente
-[19/10/2023 17:45:29] INSERT INTO cliente (nome, idade, email) VALUES (:nome, :idade, :email)
-[19/10/2023 17:45:29] SELECT * FROM cliente
-[19/10/2023 18:01:23] DELETE FROM cliente WHERE id = :id
+
+[20/10/2023 23:18:04] SELECT * FROM cliente
+[20/10/2023 23:24:25] SELECT * FROM cliente
+[20/10/2023 23:28:07] INSERT INTO cliente (nome, idade, email) VALUES (:nome, :idade, :email)
+[20/10/2023 23:28:07] SELECT * FROM cliente
+[20/10/2023 23:29:27] UPDATE cliente SET nome = :nome, idade = :idade, email = :email WHERE id = :id
+[20/10/2023 23:29:27] SELECT * FROM cliente
+[20/10/2023 23:30:36] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:30:39] UPDATE cliente SET nome = :nome, idade = :idade, email = :email WHERE id = :id
+[20/10/2023 23:30:39] SELECT * FROM cliente
+[20/10/2023 23:31:39] DELETE FROM cliente WHERE id = :id
+[20/10/2023 23:31:39] SELECT * FROM cliente
+[20/10/2023 23:39:12] SELECT * FROM cliente
+[20/10/2023 23:41:13] SELECT * FROM cliente
+[20/10/2023 23:41:15] SELECT * FROM cliente
+[20/10/2023 23:41:18] SELECT * FROM cliente
+[20/10/2023 23:46:26] SELECT * FROM cliente
+[20/10/2023 23:46:30] SELECT * FROM cliente
+[20/10/2023 23:46:35] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:46:43] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:48:16] SELECT * FROM cliente
+[20/10/2023 23:51:16] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:51:27] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:52:33] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:54:03] SELECT * FROM cliente
+[20/10/2023 23:54:05] SELECT * FROM cliente
+[20/10/2023 23:54:08] SELECT * FROM cliente
+[20/10/2023 23:54:09] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:55:00] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:55:00] SELECT * FROM cliente
+[20/10/2023 23:55:04] SELECT * FROM cliente
+[20/10/2023 23:55:09] SELECT * FROM cliente
+[20/10/2023 23:55:14] SELECT * FROM cliente
+[20/10/2023 23:55:26] SELECT * FROM cliente
+[20/10/2023 23:55:29] SELECT * FROM cliente WHERE id = :id
+[20/10/2023 23:55:30] SELECT * FROM cliente
+[21/10/2023 05:42:47] SELECT * FROM cliente
+[21/10/2023 05:42:49] SELECT * FROM cliente WHERE id = :id
+[21/10/2023 05:42:51] SELECT * FROM cliente
+[21/10/2023 05:42:54] SELECT * FROM cliente
+[21/10/2023 15:03:57] SELECT * FROM cliente
+[21/10/2023 15:10:09] SELECT * FROM cliente
+[21/10/2023 15:10:51] SELECT * FROM cliente
+[21/10/2023 15:11:06] SELECT * FROM cliente WHERE id = :id
+[21/10/2023 15:11:08] SELECT * FROM cliente
+[21/10/2023 15:29:08] INSERT INTO cliente (nome, idade, email) VALUES (:nome, :idade, :email)
+[21/10/2023 15:29:39] DELETE FROM cliente WHERE id = :id
+[21/10/2023 15:32:55] SELECT * FROM cliente WHERE id = :id
+[21/10/2023 15:35:20] SELECT * FROM cliente WHERE id = :id
+[21/10/2023 15:39:29] SELECT * FROM cliente WHERE id = :id
+[21/10/2023 15:40:04] SELECT * FROM cliente
+[21/10/2023 15:49:00] SELECT * FROM cliente
+[21/10/2023 15:49:05] SELECT * FROM cliente

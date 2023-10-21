@@ -7,13 +7,20 @@
 
     public function conexao(){
       try{
-        $PDO = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname,$this->user,$this->password);
+        $PDO = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname, $this->user, $this->password);
+        $PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $PDO;
       }catch(PDOException $e){
-        return $e->getMessage();
+        throw new Exception("Erro na conexão com o banco de dados: " . $e->getMessage());
       }
     }
   }
-  $obj = new db();
-  print_r($obj->conexao());
+
+  try {
+    $obj = new db();
+    $conexao = $obj->conexao();
+  } catch (Exception $e) {
+    echo "Erro: " . $e->getMessage();
+  }
+
 ?>
